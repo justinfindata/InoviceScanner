@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		084D767A1E97673A00D9EDA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D76791E97673A00D9EDA6 /* AppDelegate.swift */; };
-		084D767C1E97673A00D9EDA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D767B1E97673A00D9EDA6 /* ViewController.swift */; };
+		084D767C1E97673A00D9EDA6 /* InoviceScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D767B1E97673A00D9EDA6 /* InoviceScannerViewController.swift */; };
 		084D767F1E97673A00D9EDA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084D767D1E97673A00D9EDA6 /* Main.storyboard */; };
 		084D76811E97673A00D9EDA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084D76801E97673A00D9EDA6 /* Assets.xcassets */; };
 		084D76841E97673A00D9EDA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084D76821E97673A00D9EDA6 /* LaunchScreen.storyboard */; };
+		085D03BF1E9B3BA400AE7F88 /* InoviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085D03BE1E9B3BA400AE7F88 /* InoviceModel.swift */; };
+		085FA8A21E9CCCEC0014A5D2 /* InoviceScannerNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FA8A11E9CCCEC0014A5D2 /* InoviceScannerNative.swift */; };
+		5436B70B435F04EC3A6ECB0B /* Pods_inoviceScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6F4C910FA40E0AD88193FD /* Pods_inoviceScanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		084D76761E97673A00D9EDA6 /* inoviceScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inoviceScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		084D76791E97673A00D9EDA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		084D767B1E97673A00D9EDA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		084D767B1E97673A00D9EDA6 /* InoviceScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InoviceScannerViewController.swift; sourceTree = "<group>"; };
 		084D767E1E97673A00D9EDA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		084D76801E97673A00D9EDA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		084D76831E97673A00D9EDA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		084D76851E97673A00D9EDA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		085D03BE1E9B3BA400AE7F88 /* InoviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InoviceModel.swift; sourceTree = "<group>"; };
+		085FA8A11E9CCCEC0014A5D2 /* InoviceScannerNative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InoviceScannerNative.swift; sourceTree = "<group>"; };
+		21BF0C74D6794BA6DEB3A03F /* Pods-inoviceScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inoviceScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-inoviceScanner/Pods-inoviceScanner.release.xcconfig"; sourceTree = "<group>"; };
+		2D6F4C910FA40E0AD88193FD /* Pods_inoviceScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inoviceScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9F79387087CFFE83B5BF6C /* Pods-inoviceScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inoviceScanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inoviceScanner/Pods-inoviceScanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5436B70B435F04EC3A6ECB0B /* Pods_inoviceScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				084D76781E97673A00D9EDA6 /* inoviceScanner */,
 				084D76771E97673A00D9EDA6 /* Products */,
+				D20BCC57946BF7CB50AF462C /* Pods */,
+				BA3645791F9D4D58F769FE7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +66,32 @@
 			isa = PBXGroup;
 			children = (
 				084D76791E97673A00D9EDA6 /* AppDelegate.swift */,
-				084D767B1E97673A00D9EDA6 /* ViewController.swift */,
+				085FA8A11E9CCCEC0014A5D2 /* InoviceScannerNative.swift */,
+				084D767B1E97673A00D9EDA6 /* InoviceScannerViewController.swift */,
 				084D767D1E97673A00D9EDA6 /* Main.storyboard */,
 				084D76801E97673A00D9EDA6 /* Assets.xcassets */,
 				084D76821E97673A00D9EDA6 /* LaunchScreen.storyboard */,
 				084D76851E97673A00D9EDA6 /* Info.plist */,
+				085D03BE1E9B3BA400AE7F88 /* InoviceModel.swift */,
 			);
 			path = inoviceScanner;
+			sourceTree = "<group>";
+		};
+		BA3645791F9D4D58F769FE7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D6F4C910FA40E0AD88193FD /* Pods_inoviceScanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D20BCC57946BF7CB50AF462C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD9F79387087CFFE83B5BF6C /* Pods-inoviceScanner.debug.xcconfig */,
+				21BF0C74D6794BA6DEB3A03F /* Pods-inoviceScanner.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 084D76881E97673A00D9EDA6 /* Build configuration list for PBXNativeTarget "inoviceScanner" */;
 			buildPhases = (
+				B965A611968A84CB3A5B3825 /* [CP] Check Pods Manifest.lock */,
 				084D76721E97673A00D9EDA6 /* Sources */,
 				084D76731E97673A00D9EDA6 /* Frameworks */,
 				084D76741E97673A00D9EDA6 /* Resources */,
+				061C6C9AF4D07DE1CBECA123 /* [CP] Embed Pods Frameworks */,
+				AFED8D54ED5108A2DA654BC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +129,7 @@
 				TargetAttributes = {
 					084D76751E97673A00D9EDA6 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2GC9BV99WC;
+						DevelopmentTeam = X398R58965;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,13 +165,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		061C6C9AF4D07DE1CBECA123 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-inoviceScanner/Pods-inoviceScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFED8D54ED5108A2DA654BC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-inoviceScanner/Pods-inoviceScanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B965A611968A84CB3A5B3825 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		084D76721E97673A00D9EDA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				084D767C1E97673A00D9EDA6 /* ViewController.swift in Sources */,
+				084D767C1E97673A00D9EDA6 /* InoviceScannerViewController.swift in Sources */,
+				085D03BF1E9B3BA400AE7F88 /* InoviceModel.swift in Sources */,
 				084D767A1E97673A00D9EDA6 /* AppDelegate.swift in Sources */,
+				085FA8A21E9CCCEC0014A5D2 /* InoviceScannerNative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,12 +342,13 @@
 		};
 		084D76891E97673A00D9EDA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9F79387087CFFE83B5BF6C /* Pods-inoviceScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2GC9BV99WC;
+				DEVELOPMENT_TEAM = X398R58965;
 				INFOPLIST_FILE = inoviceScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = findata.com.inoviceScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = inoviceScanner.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,12 +356,13 @@
 		};
 		084D768A1E97673A00D9EDA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BF0C74D6794BA6DEB3A03F /* Pods-inoviceScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2GC9BV99WC;
+				DEVELOPMENT_TEAM = X398R58965;
 				INFOPLIST_FILE = inoviceScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = findata.com.inoviceScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = inoviceScanner.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,6 +387,7 @@
 				084D768A1E97673A00D9EDA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

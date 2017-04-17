@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Inovice Scanner Native-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InoviceScannerNative" customModule="inoviceScanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0s-rt-w9g" userLabel="cameraView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請掃描發票" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prb-he-qFi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="267"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l4-C9-xFF">
+                                <rect key="frame" x="144" y="581.5" width="86" height="38"/>
+                                <color key="backgroundColor" red="0.49596345271291409" green="1" blue="0.97694947096606388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="重新掃描">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reDetcet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vu1-ye-Hb9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="prb-he-qFi" secondAttribute="trailing" id="89d-h6-sjh"/>
+                            <constraint firstItem="4l4-C9-xFF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JxO-39-kcl"/>
+                            <constraint firstItem="i0s-rt-w9g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L36-yx-Hu3"/>
+                            <constraint firstItem="i0s-rt-w9g" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Zlx-HT-U9P"/>
+                            <constraint firstItem="4l4-C9-xFF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.8:1" id="cR0-sj-Zff"/>
+                            <constraint firstItem="prb-he-qFi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="dtV-kW-CS4"/>
+                            <constraint firstItem="i0s-rt-w9g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gPl-Nj-0hF"/>
+                            <constraint firstItem="prb-he-qFi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gm3-uR-btQ"/>
+                            <constraint firstItem="prb-he-qFi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="i3g-gk-Ojm"/>
+                            <constraint firstItem="prb-he-qFi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2.5" id="mcH-wS-98k"/>
+                            <constraint firstItem="i0s-rt-w9g" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ohj-Tk-Fv3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="InfoWindow" destination="prb-he-qFi" id="NsT-Dx-e2a"/>
+                        <outlet property="cameraView" destination="i0s-rt-w9g" id="7rT-vd-e76"/>
+                        <outlet property="reDetect" destination="4l4-C9-xFF" id="AhE-9B-0Km"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="C4G-Zh-qx8">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </objects>
+            <point key="canvasLocation" x="-218.40000000000001" y="120.98950524737631"/>
         </scene>
     </scenes>
 </document>
